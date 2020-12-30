@@ -1,88 +1,424 @@
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-.box {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/*html, body {margin: 0; height: 100%; overflow: hidden}
+*/
 
-/*========  CSS for Body  ===========*/
 
 body {
-    background-size: cover;
-    background-image: url('../Images/bg.png');
-    width: 100%;
+  background-color: #efefef;
 }
 
-.bg-yellow {
-  background-color: #23a6e6;
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
+
+@media (max-width: 1024px) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+.display-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* Intro page */
+#intro-page {
+  overflow-y:hidden;
+  margin: 0; height: 100%; overflow: hidden;
+}
+/**/
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
 section {
-    padding: 100px 0;
-}
-.title {
-    color: #4aaaa5;
-    padding-top: 10px;
-    margin-top: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-.about-me-text {
-    color: rgb(44, 37, 37);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+  padding: 80px 0;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 
-.bg-left-side {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    font-size: 16px;
-    background-color: #ffffff;
-}
-.bg-right-side {
-    padding-left: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    font-size: 16px;
-}
-.bg-right-side h4 {
-    padding-top: 20px;
-    color: red;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/*
+.section-bg {
+  background: black;
+}*/
 
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #173b6c;
 }
-.bg li {
-    color: red;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.section-title h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Nav Bar
+--------------------------------------------------------------*/
+.navbar a:hover, .navbar .active, .navbar li:hover {
+  color: #0062d3;
+  text-decoration: none;
+}
+.nav-link {
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+.navbar-toggler span {
+  display: block;
+  background-color: wheat;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
+}
+#navbar-title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+#header {
+  background-color: black;
+}
+#home {
+  background-color: transparent;
+  top: -80px;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+.intro {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+/*.intro .intro-content {
+  text-align: center;
+  position: absolute;
+}*/
+
+.intro-content h2, h1 {
+  color: white;
+  text-align: center;
+
 }
 /*
- * Blog posts
- */
- .right-container h4{
-     color: black;
-     font-family: 'Times New Roman', Times, serif
+.intro .intro-title {
+  color: #fff;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
 }
-.right-container p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: brown;
+.intro .intro-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
-.btn-submit {
-    background-color: #4aaaa5;
-    color: white;
+.intro .text-slider-items {
+  display: none;
+}*/
+
+/*--------------------------------------------------------------
+# About
+
+--------------------------------------------------------------*/
+.about {
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.contact-us-form {
-    padding-left: 20px;
-    background-color: rebeccapurple;
+.about .role {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.about .description {
+  font-family: 'Roboto', sans-serif;
+  color: #5f5d5d;
+  font-size: 15px;
+}
+.about .info-detail {
+  padding-left: 10px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+.about .hello-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: black;
+  font-size: 18px;
 }
 
-.form-group {
-    margin-left: 20px;
+.about .img-circle {
+  margin-top: 10px;
+  margin-left: -10px;
+  border-radius: 25px;
+  border: 2px solid #1e5294;
+  padding: 20px;
 }
-.formGroupInputTitle {
-    color: #363638e3;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+
+.info .fa {
+  color : #756dfa;
+  size: 20ch;
 }
+.social-links a{
+  text-align: center;
+  float: left;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #909090;
+  border-radius: 100%;
+  margin-right: 7px; /*space between*/
+  font-size: 20px;
+  line-height: 38px;
+  color : black;
+} 
+
+/*--------------------------------------------------------------
+  Resume 
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #3c4349;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume .resume-item {
+  padding: 0 0 0px 20px;
+  position: relative;
+}
+
+.resume .resume-item h4{
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #1e5294;
+  margin-bottom: 10px;
+  display: inline;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-style: italic;
+  display: inline;
+}
+/*
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+  font-size: 15px;
+
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}*/
+.resume .work-title {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-style: italic;
+}
+.resume .resume-item::before {
+  content: '';
+  position: absolute;
+ /* width: 10px;
+  height: 10px;
+  */
+  left: 0px;
+  top: 7px;
+   /* font-weight: bold;
+  */
+  /*background: #fff;
+  */
+  border: 5px solid #1f5297;
+  border-radius: 50px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+/*
+.contact section {
+  padding: 100px 0;
+  background-color: red;
+}*/
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contact .title {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+/*
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}*/
+
+/*
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}*/
+
+/*
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+}*/
+.contact .input-label {
+  color: black;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}*/
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.card{
+  margin-bottom: 30px;
+}
+.card-title {
+  padding-top: 10px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*
+section .portfolio {
+  padding-top: 20px;
+  background-color: rebeccapurple;
+}
+.portfolio h2 {
+  padding-bottom: 20px;
+}
+.portfolio {
+  background-color: #efefef;
+}*/
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/*
+footer .copyright {
+  margin-bottom: .3rem;
+}
+
+footer .credits {
+  margin-bottom: 0;
+}
+
+footer .credits a {
+  color: #fff;
+}*/
