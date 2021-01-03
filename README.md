@@ -7,7 +7,6 @@ I look forward to deep diving into JavaScript, having fun learning what it's all
 
 <div align="left">
       <img src="./assets/images/screenshots/ss1.png">
-      <br>
       <img src="./assets/images/screenshots/ss3.png">
   <br>
       <img src="./assets/images/screenshots/ss4.png">
@@ -32,8 +31,8 @@ are required. Currently validation will show one field at a time if left empty &
 map of the location/address. <br>
 
 Other than above pages, I have incorporated a sticky footer that has basic copyright information with my name in it. <br>
-<strong>Other Features: 
-1. Responsive: </strong> <br>
+<strong>Other Features: </strong> <br>
+1. Responsive:  <br>
 When the browser window size is reduced to a point where the page becomes responsive or this page were to be accessed on a mobile browser, the menu 
 tabs are converted to a drop down menu which is shown with a 3-horizontal line icon in top right corner of the page. Clicking on it opens or closes the 
 menu options & available pages can be accessed from here.  <br>
