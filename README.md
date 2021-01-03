@@ -13,7 +13,7 @@ I look forward to deep diving into JavaScript, having fun learning what it's all
   <br>
       <img src="./assets/images/screenshots/ss5.png">
 </div>
-
+<br>
 <strong> Description: </strong> <br>
 In this exercise, I have developed a multiple page portfolio utilizing HTML, CSS & Bootstrap learnings & concepts. This is web & mobile responsive - 
 meaning the page content, menus will resize if browser window size or zoom is changed or operation system zoom is increased or decreased as well as if
