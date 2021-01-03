@@ -29,8 +29,7 @@ address & incorporated social media links. These links have currently not been l
 5. Contact : This page will allow users on the web to contact me for my services if desired. This is done through a simple form & all of it's fields
 are required. Currently validation will show one field at a time if left empty & if 'Submit' is clicked. I have used google api's to embed a small 
 map of the location/address. <br>
-
-Other than above pages, I have incorporated a sticky footer that has basic copyright information with my name in it. <br>
+Other than above pages, I have incorporated a sticky footer that has basic copyright information. <br><br>
 <strong>Other Features: </strong> <br>
 1. Responsive:  <br>
 When the browser window size is reduced to a point where the page becomes responsive or this page were to be accessed on a mobile browser, the menu 
