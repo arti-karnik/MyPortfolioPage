@@ -15,7 +15,7 @@ I look forward to deep diving into JavaScript, having fun learning what it's all
       <img src="./assets/images/screenshots/ss5.png">
 </div>
 
-<strong> Description: </strong>
+<strong> Description: </strong> <br>
 In this exercise, I have developed a multiple page portfolio utilizing HTML, CSS & Bootstrap learnings & concepts. This is web & mobile responsive - 
 meaning the page content, menus will resize if browser window size or zoom is changed or operation system zoom is increased or decreased as well as if
 a user were to access the web page on a mobile device and it's supported browser. <br>
@@ -32,9 +32,8 @@ are required. Currently validation will show one field at a time if left empty &
 map of the location/address. <br>
 
 Other than above pages, I have incorporated a sticky footer that has basic copyright information with my name in it. <br>
-
 <strong>Other Features: 
-1. Responsive:  <br>
+1. Responsive: </strong> <br>
 When the browser window size is reduced to a point where the page becomes responsive or this page were to be accessed on a mobile browser, the menu 
 tabs are converted to a drop down menu which is shown with a 3-horizontal line icon in top right corner of the page. Clicking on it opens or closes the 
 menu options & available pages can be accessed from here.  <br>
