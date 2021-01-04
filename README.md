@@ -1,7 +1,7 @@
 # MyPortfolioPage
 
 <strong> Project Summary: </strong> <br>
-I have had great fun to build on the first assignment & work on this one utilizing advanced HTML, CSS & Bootstrap concepts. Understood & successfully
+I have had great fun to build on the assignment & work on this one utilizing advanced HTML, CSS & Bootstrap concepts. Understood & successfully
 applied concepts like static header, footers & more importantly a web & mobile responsive page.
 I look forward to deep diving into JavaScript, having fun learning what it's all about & more importantly applying the learning to develop & build further more professional looking webpages.
 
