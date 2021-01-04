@@ -40,7 +40,7 @@ menu options & available pages can be accessed from here.  <br>
 2. Clicking on my name link in top left corner of the page will redirect to the 'Home' (index.html) page.  <br>
 
 <strong>Testing: </strong> <br>
-Unit tested the page on Windows (Chrome, IE11 & Edge) & MAC to ensure that the layout is consistent in full view as well as in the responsive mode.  <br>
+Unit tested the page on Windows (Chrome, IE11 & Edge), MAC,Mobile and iPad to ensure that the layout is consistent in full view as well as in the responsive mode.  <br>
 
 <strong> Purpose: </strong> <br>
 Apply learnings from HTML, CSS & Bootstrap to build a multi-page portfolio that is web & mobile responsive.  <br>
