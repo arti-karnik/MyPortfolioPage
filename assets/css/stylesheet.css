@@ -336,12 +336,22 @@ a:hover, a:visited, a:link, a:active
 
 .card{
   margin-bottom: 30px;
+  width: 200px;
+  border: 1px solid blueviolet;
+  border-radius: 10px;
 }
 .card-title {
-  padding-top: 10px;
   color: black;
-  font-size: 18px;
+  font-family: 'Trebuchet MS';
+  font-style: italic;
+  font-size: 20px;
+  color: #212529;
+  font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+}
+.card-img-top {
+  width: 200px;
+  padding: 20px;
 }
 .modal-button {
   background-color: DodgerBlue;
