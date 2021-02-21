@@ -49,10 +49,9 @@
     </nav>
   </header>
   <!-- ======= Header ends here ======= -->
-
   <!-- ======= Portfolio Section starts ======= -->
   <section id="section">
-    <div class="container">
+    <div class="portfolio">
       <div class="section-title">
         <h2>Portfolio </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -62,49 +61,39 @@
 
       <div class="row">
           <div class="col-md-3">
-          <div class="card" style="width: 200px;">
-            <a href="https://arti-karnik.github.io/FoodFeed/" target="_blank">
+          <div class="card" style="width: 200px;" onclick="clicked(id)" id=0 data-toggle="modal" data-target="#modal">
             <img src="./assets/images/icons/food-icon.png" class="card-img-top" alt="portfolio-image">
             <div class="card-title text-center">
               Food Feed
             </div>
-            </a>
           </div>
           </div>
           <div class="col-md-3">
-            <div class="card" style="width: 200px;">
-              <a href="https://arti-karnik.github.io/PlayMyDay/" target="_blank">
-                <img src="./assets/images/icons/plan-icon.png" class="card-img-top" alt="portfolio-image">
-                    <div class="card-title text-center">  Plan My Day </div>
-                  </a>
-            </div>
+            <div class="card" style="width: 200px;" onclick="clicked(id)" id=1 data-toggle="modal" data-target="#modal">
+              <img src="./assets/images/icons/plan-icon.png" class="card-img-top" alt="portfolio-image">
+                <div class="card-title text-center">  Plan My Day </div>
+                </div>
           </div>
           <div class="col-md-3">
-            <div class="card" style="width: 200px;">
-              <a href="https://arti-karnik.github.io/Javascript-Quizzy/" target="_blank">
+            <div class="card" style="width: 200px;" onclick="clicked(id)" id=2 data-toggle="modal" data-target="#modal">
                 <img src="./assets/images/icons/quiz-icon.png" class="card-img-top" alt="portfolio-image">
                   <div class="card-title text-center"> Javascript Quizzy</div>
-                  </a>
             </div>
           </div>
       
           <div class="col-md-3">
-            <div class="card" style="width: 200px;">
-              <a href="https://arti-karnik.github.io/WhatsMyWeather/" target="_blank">
+            <div class="card" style="width: 200px;" onclick="clicked(id)" id=3 data-toggle="modal" data-target="#modal">
                 <img src="./assets/images/icons/weather-icon.png" class="card-img-top" alt="portfolio-image">
                     <div class="card-title text-center"> What's my Weather! </div>
-              </a>
             </div>
           </div>
       </div>
       
       <div class="row">
           <div class="col-md-3">
-            <div class="card" style="width: 200px;">
-              <a href="https://arti-karnik.github.io/PasswordGenerator/" target="_blank">
+            <div class="card" style="width: 200px;" onclick="clicked(id)" id=4 data-toggle="modal" data-target="#modal">
               <img src="./assets/images/icons/password-icon.png" class="card-img-top" alt="portfolio-image">
               <div class="card-title text-center">
-              </a>
               Password Generator!
               </div>
             </div>
@@ -130,6 +119,27 @@
         </div>
     </div>
   </section>
+
+  <!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Title</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 > Description: </h6>
+        <p id="modal-description">  </p>
+        <a class="modal-button" id="modal-github" href="" target="_blank">Go to Github Repo</a>
+        <a class="modal-button" id="modal-url" href="" target="_blank">Go to Application url</a>      
+      </div>
+    </div>
+  </div>
+</div>
   <!-- End  Portfolio -->
 
   <!-- ======= Footer ======= -->
@@ -140,6 +150,8 @@
     </div>
   </footer>
   <!-- End  Footer -->
+
+  <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
 
