@@ -89,3 +89,5 @@ function clicked(id){
     title.text(portfolio[id].title);
     description.text(portfolio[id].description);
 }
+
+
